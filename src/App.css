@@ -1,28 +1,84 @@
-.App {
+.ui.container {
+  width: 100%;
+}
+
+.ui.segment {
+  background-color: #f44336;
+  border-radius: 0;
+  color: #fff;
+  font-size: 13px;
+}
+
+.menu {
+  background-color: #fff!important;
+}
+
+.logo, .logo:hover, .logo:focus {
+  color: #f44336!important;
+  font-size: 26px;
+  line-height: 25px;
+  text-shadow: 2px 2px 1px rgba(150, 150, 183, 0.18);
+  text-decoration: none;
+  background: transparent!important;
+}
+
+.right.menu .item {
+  color: #212121;
+  padding: 28px 16px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  transition: all .25s ease-out;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.right.menu .item:hover {
+  color: #f44336!important;
+  transition: all .25s ease-out;
+  background: transparent!important;
+}
+
+.ui.secondary.stackable.menu {
+  border-bottom: 2px solid grey;
+}
+
+.column h3 {
+  display: inline-block;
+  padding: 0 0 18px;
+  text-transform: capitalize;
+  width: auto;
+  color: #212121;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: normal;
+  margin: 0 0 15px;
+  overflow-wrap: break-word;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.column h3 span {
+  color: #f44336;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.ourServices p {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  margin: -10px 0 40px;
+  opacity: 0.9;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.ourServicesContent .mobile.column {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  margin-bottom: 30px;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  z-index: 12;
+  display: none;
+  border-radius: 3px;
 }

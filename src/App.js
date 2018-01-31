@@ -15,8 +15,9 @@ export default class App extends Component {
         <Router>
           <div>
             <Switch>
-              <Route component={MenuMain} />
-              <Route path="/not-found" component={NotFound}/>
+              {/*<Route component={MenuMain} />*/}
+              <MenuMain/>
+              {/*<Route path="/not-found" component={NotFound}/>*/}
             </Switch>
           </div>
         </Router>

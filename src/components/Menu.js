@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Route, Link} from 'react-router-dom';
-import {Menu, Button, Grid, Icon} from 'semantic-ui-react';
+import {Menu, Button, Grid, Segment} from 'semantic-ui-react';
+
 import Home from '../containers/Home';
 import Services from '../containers/Services';
 import Profile from '../containers/Profile';
@@ -22,18 +23,20 @@ export class NavContainer extends Component {
       <div>
         <Grid>
           <Grid.Column mobile={10} computer={16}>
-            <Menu fluid stackable>
+            <Menu secondary stackable fluid fixed='top'>
               <Menu.Item
                 as={Link}
                 to='/'
+                className="logo"
               >
-                <img src="" alt="logo"/>
+                Neomic
               </Menu.Item>
 
               <Menu.Menu position="right">
                 <Menu.Item
-                  as={Link}
-                  to='/'
+                  // as={Link}
+                  // to='/'
+                  href="#section1"
                   name="home"
                   active={activeItem === 'home'}
                   onClikc={this.handleItemClick}
@@ -42,8 +45,9 @@ export class NavContainer extends Component {
                 </Menu.Item>
 
                 <Menu.Item
-                  as={Link}
-                  to='/services'
+                  // as={Link}
+                  // to='/services'
+                  href="#section2"
                   name="services"
                   link={true}
                   active={activeItem === 'services'}
@@ -103,12 +107,14 @@ export default class MenuMain extends Component {
   render() {
     return (
       <div>
+        <Segment>info@neomic.co</Segment>
         <NavContainer/>
 
-        <Route exact path="/" component={Home}/>
-        <Route path="/services" component={Services}/>
-        <Route path="/profile" component={Profile}/>
-        <Route path="/portfolio" component={Portfolio}/>
+        <Home/>
+        {/*<Route exact path="/" component={Home}/>*/}
+        {/*<Route path="/services" component={Services}/>*/}
+        {/*<Route path="/profile" component={Profile}/>*/}
+        {/*<Route path="/portfolio" component={Portfolio}/>*/}
 
         <Footer/>
       </div>
