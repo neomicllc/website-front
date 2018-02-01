@@ -57,8 +57,9 @@ export class NavContainer extends Component {
                 </Menu.Item>
 
                 <Menu.Item
-                  as={Link}
-                  to='/profile'
+                  // as={Link}
+                  // to='/profile'
+                  href="#section3"
                   name="profile"
                   link={true}
                   active={activeItem === 'profile'}
@@ -68,8 +69,9 @@ export class NavContainer extends Component {
                 </Menu.Item>
 
                 <Menu.Item
-                  as={Link}
-                  to='/portfolio'
+                  // as={Link}
+                  // to='/portfolio'
+                  href="#section4"
                   name="portfolio"
                   link={true}
                   active={activeItem === 'portfolio'}
